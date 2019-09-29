@@ -3,11 +3,16 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,800')
     
-$bg-color-green: lighten(#75ff75, 5%)
-$bg-color-blue: #5088ff
-$text-color: darken(#68583A, 10%)
-$text-color-light: #68583A
-$icon-color: #D4872F
+// $bg-color-green: lighten(#75ff75, 5%)
+$primary-color-light: #5eb8ff
+// $bg-color-blue: #5088ff
+$primary-color: #0288d1
+// $text-color: darken(#68583A, 10%)
+$text-color: #000
+// $text-color-light: #c77800
+$secondary-color: #ffa726
+$secondary-color-light: #ffd95b
+$secondary-color-dark: #c77800
 $ff: Raleway
 
 body
@@ -53,7 +58,7 @@ em
 .navbar-light .navbar-nav .nav-link
     color: $text-color
     &:hover, &.active
-        color: $bg-color-blue
+        color: $primary-color
 
 .header
     font-weight: normal
@@ -133,7 +138,7 @@ em
         text-align: left
 
 #title
-    background-color: $bg-color-blue
+    background-color: $primary-color
     background-image: url(../images/romanisko_portret_cut_SM.svg)
     background-repeat: no-repeat//, no-repeat
     background-position: calc(100vw - 150px) 0
@@ -142,20 +147,20 @@ em
     @include media-breakpoint-up(md)
         // padding: 150px 4em
         padding: 8em 1em
-        background-image: url(../images/romanisko_portret_MD.svg)//linear-gradient(to right, rgba($bg-color-blue, 1), rgba(255, 255, 255, 0))
+        background-image: url(../images/romanisko_portret_MD.svg)//linear-gradient(to right, rgba($primary-color, 1), rgba(255, 255, 255, 0))
         background-position-x: calc(100vw - 400px)//, left
         background-position-y: 0
 
 #what
-    background: $icon-color
+    background: $secondary-color
     padding: 100px 1em
     min-height: 100vh
     // background-image: url(../images/psychology-4440671_1920_2.png)
-    background-image: url(../images/face-985982_1920_cut.png)
+    background-image: url(../images/face-985982_1920_cutBW.png)
     background-position: center
     background-repeat: no-repeat
     background-size: cover
-    background-blend-mode: overlay
+    background-blend-mode: multiply
     @include media-breakpoint-up(sm)
         min-height: auto
         padding: 8em 1em
@@ -165,7 +170,7 @@ em
 
 
 #who
-    background: $bg-color-green
+    background: $primary-color-light
     padding: 100px 1em
     min-height: 100vh
     @include media-breakpoint-up(sm)
@@ -174,15 +179,15 @@ em
         font-size: 1.1em
 
 #price
-    background: $icon-color
+    background: $secondary-color
     padding: 100px 1em
     min-height: 100vh
-    background-image: url(../images/psychology-4440671_1920_2.png)
+    background-image: url(../images/psychology-4440671_1920_2BW.png)
     // background-image: url(../images/face-985982_1920_cut.png)
     background-position: center
     background-repeat: no-repeat
     background-size: cover
-    background-blend-mode: overlay
+    background-blend-mode: multiply
     @include media-breakpoint-up(sm)
         // min-height: auto
         padding: 8em 1em
@@ -191,8 +196,8 @@ em
         margin-bottom: 2em    
 
 #footer
-    position: relative
-    top: 56px
+    // position: relative
+    // top: 56px
     font-size: .8em
     padding: 25px 1em 9px// 60px
     @include media-breakpoint-up(md)
