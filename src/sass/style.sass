@@ -83,7 +83,7 @@ em
     padding-left: 0
     list-style: none
     span
-        line-height: 1.1em
+        line-height: 1.2em
         display: inline-flex
         vertical-align: middle
         width: 50%
@@ -92,18 +92,17 @@ em
 
 .list-services-item 
     font-size: 1.1em
-    line-height: 2.7em
+    line-height: 4.5em
     cursor: pointer
-    color: $black
+    // color: $text-color
+    // color: $black
     @include media-breakpoint-up(md)
         font-weight: lighter
         font-size: 1.3em
-        // color: $gray-700
-        color: $text-color
 
 .list-issues
     list-style: none
-    margin: -0.5em 0 1em 1.75em
+    margin: -0.2em 0 1em 1.5em
     line-height: 1.5em
     display: none
     width: 70%
@@ -127,8 +126,6 @@ em
     margin-top: 1.5em
     @include media-breakpoint-up(md)
         margin-top: .5em
-    // @include media-breakpoint-up(lg)
-    //     margin-top: -30px
 
 .foto-align
     text-align: center
@@ -142,7 +139,7 @@ em
 #title
     background-color: $primary-color
     background-image: url(../images/romanisko_portret_cut_SM.svg)
-    background-repeat: no-repeat//, no-repeat
+    background-repeat: no-repeat
     background-position: calc(100vw - 140px) 0
     padding: 100px 1em
     min-height: 100vh
@@ -203,10 +200,8 @@ em
         margin-bottom: 2em    
 
 #footer
-    // position: relative
-    // top: 56px
     font-size: .8em
-    padding: 25px 1em 9px// 60px
+    padding: 25px 1em 9px
     @include media-breakpoint-up(md)
         font-size: 1em
     a   
