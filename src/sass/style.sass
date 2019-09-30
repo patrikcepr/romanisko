@@ -14,8 +14,8 @@ $text-color: #000
 $secondary-color: #ffa726
 $secondary-color-light: #ffd95b
 $secondary-color-dark: #c77800
-$grad-color-start: rgba($primary-color, .6)
-$grad-color-end: rgba($primary-color, .9)
+$grad-color-start: rgba($primary-color, .6) 
+$grad-color-end: rgba($primary-color, .9) 40%
 
 $ff: Raleway
 
@@ -182,11 +182,10 @@ em
 
 #who
     // background: $primary-color-light
-    background: linear-gradient(135deg, rgba($primary-color, .6), $primary-color)
+    background: linear-gradient(160deg, rgba($primary-color, .6) 10%, $primary-color)
     padding: 100px 1em
     min-height: 100vh
     @include media-breakpoint-up(sm)
-        // min-height: auto
         padding: 8em 1em
         font-size: 1.1em
     h1 
