@@ -49,8 +49,7 @@ em
     background: rgba(255, 255, 255, .7)
     padding: .1em .3em
     @include media-breakpoint-up(md)
-        line-height: 1.6em
-    
+        line-height: 1.6em    
 
 .brand_img
     width: 45px
@@ -60,7 +59,10 @@ em
 .navbar-light .navbar-nav .nav-link
     color: $text-color
     &:hover, &.active
-        color: $primary-color
+        color: $secondary-color
+
+.bg-light
+    background-color: rgba($primary-color, .95) !important
 
 .header
     font-weight: normal
@@ -94,8 +96,6 @@ em
     font-size: 1.1em
     line-height: 4.5em
     cursor: pointer
-    // color: $text-color
-    // color: $black
     @include media-breakpoint-up(md)
         font-weight: lighter
         font-size: 1.3em
@@ -137,23 +137,27 @@ em
         text-align: left
 
 #title
-    background-color: $primary-color
-    background-image: url(../images/romanisko_portret_cut_SM.svg)
-    background-repeat: no-repeat
-    background-position: calc(100vw - 140px) 0
+    // background-color: $primary-color
+    background: linear-gradient(225deg, rgba($primary-color, .4), rgba($primary-color, 9)), url(../images/romanisko_portret_cut_SM.svg) calc(100vw - 140px) 0 no-repeat
+    // background-image: url(../images/romanisko_portret_cut_SM.svg) calc(100vw - 140px) 0 no-repeat, linear-gradient(135deg, rgba($primary-color, .3), $primary-color)
+    // background-repeat: no-repeat
+    // background-position: calc(100vw - 140px) 0
     padding: 100px 1em
     min-height: 100vh
     @include media-breakpoint-up(sm)
-        background-position-x: calc(100vw - 200px)//, left
+        background: linear-gradient(225deg, rgba($primary-color, .4), rgba($primary-color, .9)), url(../images/romanisko_portret_MD.svg) calc(100vw - 200px) 0 no-repeat
+        // background-position-x: calc(100vw - 200px)
     @include media-breakpoint-up(md)
         padding: 8em 1em
-        background-image: url(../images/romanisko_portret_MD.svg)//linear-gradient(to right, rgba($primary-color, 1), rgba(255, 255, 255, 0))
-        background-position-x: calc(100vw - 300px)//, left
-        background-position-y: 0
+        background: linear-gradient(225deg, rgba($primary-color, .4), rgba($primary-color, .9)), url(../images/romanisko_portret_MD.svg) calc(100vw - 300px) 0 no-repeat
+        // background-position-x: calc(100vw - 300px)
+        // background-position-y: 0
     @include media-breakpoint-up(lg)
-        background-position-x: calc(100vw - 400px)//, left
+        background: linear-gradient(225deg, rgba($primary-color, .4), rgba($primary-color, .9)), url(../images/romanisko_portret_MD.svg) calc(100vw - 400px) 0 no-repeat
+        // background-position-x: calc(100vw - 400px)
     @include media-breakpoint-up(xl)
-        background-position-x: calc(100vw - 530px)//, left
+        background: linear-gradient(225deg, rgba($primary-color, .4), rgba($primary-color, .9)), url(../images/romanisko_portret_MD.svg) calc(100vw - 530px) 0 no-repeat
+        // background-position-x: calc(100vw - 530px)
 
 #what
     background: $secondary-color
@@ -174,13 +178,16 @@ em
 
 
 #who
-    background: $primary-color-light
+    // background: $primary-color-light
+    background: linear-gradient(135deg, rgba($primary-color, .6), $primary-color)
     padding: 100px 1em
     min-height: 100vh
     @include media-breakpoint-up(sm)
         // min-height: auto
         padding: 8em 1em
         font-size: 1.1em
+    h1 
+        margin-bottom: 2em
 
 #price
     background: $secondary-color-light

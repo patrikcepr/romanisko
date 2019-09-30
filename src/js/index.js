@@ -23,7 +23,7 @@ $(function () {
         if (st > lastScrollTop) { // scroll down
 
             // use this is jQuery full is used
-            $navbar.fadeOut()
+            $navbar.fadeOut();
 
             // use this to use CSS3 animation
             // $navbar.addClass("fade-out");
@@ -34,7 +34,7 @@ $(function () {
         } else { // scroll up
 
             // use this is jQuery full is used
-            $navbar.fadeIn()
+            $navbar.fadeIn();
 
             // use this to use CSS3 animation
             // $navbar.addClass("fade-in");
