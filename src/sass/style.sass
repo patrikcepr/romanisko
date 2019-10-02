@@ -139,6 +139,32 @@ em
     @include media-breakpoint-up(md)
         text-align: left
 
+.list-contact
+    list-style: none
+    padding-left: 0
+    font-size: 1.1em
+    line-height: 1.5em
+    &:last-of-type
+        margin-bottom: 4em
+
+.list-contact-item-header
+    font-weight: bolder
+    font-size: 1.25em
+    color: rgba($text-color, .6)
+
+.list-contact-item-break
+    hr
+        border: none
+        // border-bottom: 1px solid rgba($text-color, 0)
+        height: 0.8em
+        margin: 0 0 .8em
+
+.list-prices
+    list-style: none
+    padding-left: 0
+    font-size: 1.1em
+    line-height: 1.5em
+
 #title
     // background-color: $primary-color
     background: linear-gradient(225deg, $grad-color-start, $grad-color-end), url(../images/romanisko_portret_cut_SM.svg) calc(100vw - 140px) 0 no-repeat
@@ -191,7 +217,7 @@ em
     h1 
         margin-bottom: 2em
 
-#price
+#contact
     background: $secondary-color-light
     padding: 100px 1em
     min-height: 100vh
